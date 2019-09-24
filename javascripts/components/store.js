@@ -8,7 +8,7 @@ const printToDOM = (divID, toPrint) => {
     document.getElementById(divID).innerHTML = toPrint;
 }
 
-const addtoCartEvent = () => {
+const addToCartEvent = () => {
     console.log('added to cart');
 }
 
@@ -20,7 +20,7 @@ const makeStore = () => {
     domString += '<button id="cartButton" type="button" class="btn btn-secondary col-12">Add to Cart</button>';
 
     printToDOM('storeContainer', domString);
-    document.getElementById('cartButton').addEventListener('click', addtoCartEvent);
+    document.getElementById('cartButton').addEventListener('click', addToCartEvent);
 }
 
 // export default. what's inside brackets is object
